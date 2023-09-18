@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a737c28-bb43-45d3-a460-1539eb28c7b6" name="Changes" comment="working on get started page">
-      <change afterPath="$PROJECT_DIR$/components/nativebase/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conts/colors/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conts/fonts/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/useFonts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-native.config.js" afterDir="false" />
+    <list default="true" id="9a737c28-bb43-45d3-a460-1539eb28c7b6" name="Changes" comment="added custom fonts and completed getting started screen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/colors/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/getting-started.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/getting-started.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694961929359</updated>
       <workItem from="1694961937551" duration="4533000" />
-      <workItem from="1695009126204" duration="18337000" />
+      <workItem from="1695009126204" duration="19053000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <option name="closed" value="true" />
@@ -100,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695027028657</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added custom fonts and completed getting started screen">
+      <option name="closed" value="true" />
+      <created>1695049529197</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695049529197</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project init" />
     <MESSAGE value="working on get started page" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on get started page" />
+    <MESSAGE value="added custom fonts and completed getting started screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="added custom fonts and completed getting started screen" />
   </component>
 </project>

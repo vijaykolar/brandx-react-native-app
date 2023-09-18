@@ -1,6 +1,7 @@
-import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { NativeBaseProvider } from "native-base";
+import { GluestackUIProvider } from "@gluestack-ui/themed";
 
 import GettingStarted from "./screens/getting-started";
 
@@ -8,22 +9,14 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={GettingStarted} />
-        {/*<Stack.Screen name="Details" component={DetailsScreen} />*/}
-      </Stack.Navigator>
-    </NavigationContainer>
+    <GluestackUIProvider>
+      {/*<NavigationContainer>*/}
+      {/*  <Stack.Navigator>*/}
+      {/*    <Stack.Screen name="Home" component={GettingStarted} />*/}
+      {/*<Stack.Screen name="Details" component={DetailsScreen} />*/}
+      {/*</Stack.Navigator>*/}
+      {/*</NavigationContainer>*/}
+      <GettingStarted />
+    </GluestackUIProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#0f0",
-    alignItems: "center",
-    justifyContent: "center",
-    paddingLeft: 4,
-    paddingRight: 4,
-  },
-});

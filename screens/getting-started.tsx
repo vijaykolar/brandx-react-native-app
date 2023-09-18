@@ -1,31 +1,33 @@
-import {
-  Image,
-  Text,
-  View,
-  StyleSheet,
-  Button,
-  TouchableOpacity,
-} from "react-native";
-import { COLORS } from "../colors";
+import { Image, View, StyleSheet } from "react-native";
+import { COLORS } from "../conts/colors";
+import { useFonts } from "../hooks/useFonts";
+import { FONT_FAMILY } from "../conts/fonts";
+import { Button, Box, ButtonText, Text } from "../components/nativebase";
 
 function GettingStarted() {
+  const { loaded } = useFonts();
+  if (!loaded) return null;
   return (
     <View style={styles.container}>
-      {/*<Text>GettingStartedOA</Text>*/}
       <Image
         style={styles.image}
         source={require("../assets/bg-getting-started.png")}
       />
       <View style={styles.overlay} />
+      <Box style={styles.logoContainer}>
+        <Text style={styles.logo}>Brandx</Text>
+      </Box>
       <View style={styles.wrapper}>
         <Text style={styles.title}>FASHION INSPIRED</Text>
         <Text style={styles.info}>
           Discover the best product for your fashion
         </Text>
       </View>
-      <View style={styles.button}>
-        <Text style={styles.buttonText}>Get Started</Text>
-      </View>
+      <Box>
+        <Button style={styles.button}>
+          <ButtonText style={styles.buttonText}>get started</ButtonText>
+        </Button>
+      </Box>
     </View>
   );
 }
@@ -53,6 +55,18 @@ const styles = StyleSheet.create({
     backgroundColor:
       "linear-gradient(90deg, rgba(0, 0, 0, 0.4) 20.55%, rgba(0, 0, 0, 0.00) 6.98%)",
   },
+  logoContainer: {
+    flex: 1,
+    paddingTop: 40,
+    textAlign: "center",
+    alignSelf: "center",
+  },
+  logo: {
+    color: COLORS.white,
+    fontFamily: FONT_FAMILY.HomenajeRegular,
+    fontSize: 22,
+    lineHeight: 22,
+  },
   wrapper: {
     marginBottom: 50,
     textAlign: "center",
@@ -65,6 +79,7 @@ const styles = StyleSheet.create({
     lineHeight: 56,
     letterSpacing: 3,
     color: COLORS.white,
+    fontFamily: FONT_FAMILY.GTWalsheimProBlack,
   },
   info: {
     textAlign: "center",
@@ -73,19 +88,22 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     lineHeight: 12,
     color: COLORS.white,
+    fontFamily: FONT_FAMILY.GTWalsheimProMedium,
   },
   button: {
     backgroundColor: COLORS.primary,
-    width: "100%",
-    padding: 20,
-    textAlign: "center",
+    padding: 4,
+    height: 70,
   },
   buttonText: {
     textAlign: "center",
+    fontFamily: FONT_FAMILY.GTWalsheimProMedium,
     color: COLORS.white,
     fontSize: 18,
     fontWeight: "500",
+    textTransform: "capitalize",
     lineHeight: 18 /* 100% */,
+    letterSpacing: 1,
   },
 });
 
